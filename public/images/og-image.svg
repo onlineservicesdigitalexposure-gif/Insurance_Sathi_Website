@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" fill="none" role="img" aria-label="Insurance Sathi - All Insurance Solutions Under One Roof">
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F294D" />
+      <stop offset="50%" stop-color="#123B75" />
+      <stop offset="100%" stop-color="#1E4E96" />
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F28C28" />
+      <stop offset="100%" stop-color="#EA580C" />
+    </linearGradient>
+    <linearGradient id="royalGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2463C5" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)" />
+
+  <!-- Subtle Ambient Glows -->
+  <circle cx="150" cy="120" r="300" fill="#2463C5" fill-opacity="0.25" />
+  <circle cx="1050" cy="500" r="350" fill="#F28C28" fill-opacity="0.15" />
+
+  <!-- Left Content Area -->
+  <g transform="translate(100, 100)">
+    <!-- Brand Pill / Badge -->
+    <rect x="0" y="0" width="310" height="42" rx="21" fill="#FFFFFF" fill-opacity="0.12" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1.5" />
+    <circle cx="21" cy="21" r="7" fill="#F28C28" />
+    <text x="38" y="26" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="14" letter-spacing="0.5">INSURANCE SATHI • BARASAT</text>
+
+    <!-- Main Headline -->
+    <text x="0" y="115" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="52" letter-spacing="-1">All Insurance Solutions</text>
+    <text x="0" y="175" fill="#F28C28" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="52" letter-spacing="-1">Under One Roof</text>
+
+    <!-- Subheadline -->
+    <text x="0" y="235" fill="#E2E8F0" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="400">Unbiased guidance, policy renewals &amp; dedicated claim assistance.</text>
+    <text x="0" y="268" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="400">Serving policyholders across Barasat, Madhyamgram &amp; Habra.</text>
+
+    <!-- Pillars Pills -->
+    <g transform="translate(0, 315)">
+      <rect x="0" y="0" width="130" height="38" rx="10" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.15" />
+      <text x="18" y="24" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="13" font-weight="600">🛡️ Life &amp; Term</text>
+
+      <rect x="145" y="0" width="140" height="38" rx="10" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.15" />
+      <text x="163" y="24" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="13" font-weight="600">🏥 Mediclaim</text>
+
+      <rect x="300" y="0" width="130" height="38" rx="10" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.15" />
+      <text x="318" y="24" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="13" font-weight="600">🚗 Motor / Car</text>
+
+      <rect x="445" y="0" width="145" height="38" rx="10" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.15" />
+      <text x="460" y="24" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="13" font-weight="600">📄 Policy Revival</text>
+    </g>
+
+    <!-- Location & Contact Footer -->
+    <g transform="translate(0, 385)">
+      <text x="0" y="25" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="15" font-weight="700">📍 Duckbanglow More, Barasat, WB 700124</text>
+      <text x="360" y="25" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="15" font-weight="700">📞 Helpline: 9332364068</text>
+    </g>
+  </g>
+
+  <!-- Right Visual Card (Shield with Monogram) -->
+  <g transform="translate(780, 110)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="320" height="410" rx="28" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="2" />
+    
+    <!-- Shield Logo Graphic -->
+    <path d="M160 55 C220 55 245 75 245 140 C245 220 160 275 160 285 C160 275 75 220 75 140 C75 75 100 55 160 55 Z" fill="url(#orangeGrad)" />
+    
+    <!-- Inner Shield Inlay -->
+    <path d="M160 75 C205 75 225 90 225 140 C225 205 160 252 160 260 C160 252 95 205 95 140 C95 90 115 75 160 75 Z" fill="#123B75" />
+    
+    <!-- Monogram 'IS' -->
+    <text x="160" y="180" fill="#FFFFFF" font-family="system-ui, sans-serif" font-weight="900" font-size="54" text-anchor="middle" letter-spacing="-1">IS</text>
+    
+    <!-- Card Text -->
+    <text x="160" y="325" fill="#FFFFFF" font-family="system-ui, sans-serif" font-weight="800" font-size="20" text-anchor="middle">MD Abrahim</text>
+    <text x="160" y="350" fill="#93C5FD" font-family="system-ui, sans-serif" font-size="14" font-weight="500" text-anchor="middle">Founder &amp; Principal Advisor</text>
+    <text x="160" y="375" fill="#F28C28" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">ESTD. 20 MAY 2023</text>
+  </g>
+</svg>

@@ -1,0 +1,453 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   INSURANCE SATHI DESIGN SYSTEM - TAILWIND CSS 4 SPECIFICATION
+   Brand Identity:
+   - Primary Navy:     #123B75 (Trust, Stability, Security)
+   - Royal Blue:       #2463C5 (Professional Advisory, Energy, Precision)
+   - Accent Orange:    #F28C28 (Warm Guidance, Customer-First, Action CTA)
+   - Light Background: #F7F9FC (Clean, Spacious Financial Polish)
+   - Dark Text:        #172B4D (High Contrast, Enterprise Readability)
+   - White Surface:    #FFFFFF (Pure Structured Elevation)
+   ========================================================================== */
+
+@layer base {
+  :root {
+    --background: #f7f9fc;
+    --foreground: #172b4d;
+    --card: #ffffff;
+    --card-foreground: #172b4d;
+    --card-border: #dfe1e6;
+    --border-subtle: #e9ecf2;
+    --muted-bg: #eef2f7;
+
+    --brand-navy: #123b75;
+    --brand-royal: #2463c5;
+    --brand-orange: #f28c28;
+    --brand-dark: #172b4d;
+
+    --font-sans: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  /* Compact uniform 1rem vertical padding for all & every individual section across the website */
+  main section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@theme {
+  /* Brand Primary Navy Palette */
+  --color-brand-navy-50: #eff5fc;
+  --color-brand-navy-100: #dfecf9;
+  --color-brand-navy-200: #c3dcf4;
+  --color-brand-navy-300: #9ac4ec;
+  --color-brand-navy-400: #5d9ee0;
+  --color-brand-navy-500: #2e7bd0;
+  --color-brand-navy-600: #1f5fa8;
+  --color-brand-navy-700: #123b75;
+  --color-brand-navy-800: #0e2d5b;
+  --color-brand-navy-900: #0a1f3f;
+  --color-brand-navy-950: #061327;
+  --color-brand-navy: #123b75;
+
+  /* Brand Royal Blue Palette */
+  --color-brand-royal-50: #f0f6fe;
+  --color-brand-royal-100: #e0edfc;
+  --color-brand-royal-200: #b9dbfa;
+  --color-brand-royal-300: #7ebef5;
+  --color-brand-royal-400: #3e99ed;
+  --color-brand-royal-500: #2463c5;
+  --color-brand-royal-600: #1b4fa2;
+  --color-brand-royal-700: #153e81;
+  --color-brand-royal-800: #113164;
+  --color-brand-royal-900: #0e284f;
+  --color-brand-royal: #2463c5;
+
+  /* Brand Orange Palette (CTA / Guidance) */
+  --color-brand-orange-50: #fef8f1;
+  --color-brand-orange-100: #fdeee0;
+  --color-brand-orange-200: #fbd9be;
+  --color-brand-orange-300: #f7bc8f;
+  --color-brand-orange-400: #f49e53;
+  --color-brand-orange-500: #f28c28;
+  --color-brand-orange-600: #d66f12;
+  --color-brand-orange-700: #b1520f;
+  --color-brand-orange-800: #8d3f12;
+  --color-brand-orange-900: #733413;
+  --color-brand-orange: #f28c28;
+
+  /* Brand Neutrals & Surfaces */
+  --color-brand-light: #f7f9fc;
+  --color-brand-dark: #172b4d;
+  --color-brand-body: #344563;
+  --color-brand-muted: #6b778c;
+  --color-brand-subtle: #97a0af;
+  --color-brand-border: #dfe1e6;
+
+  /* Status Colors */
+  --color-brand-success: #00875a;
+  --color-brand-success-light: #e3fcef;
+  --color-brand-warning: #ffab00;
+  --color-brand-warning-light: #fff0b3;
+  --color-brand-error: #de350b;
+  --color-brand-error-light: #ffebe6;
+
+  /* Typography */
+  --font-sans: var(--font-manrope), "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* Border Radius Tokens */
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+  --radius-full: 9999px;
+
+  /* Shadow Tokens */
+  --shadow-subtle: 0 1px 3px 0 rgba(23, 43, 77, 0.05), 0 1px 2px -1px rgba(23, 43, 77, 0.05);
+  --shadow-card: 0 4px 20px -2px rgba(18, 59, 117, 0.06), 0 2px 6px -1px rgba(18, 59, 117, 0.03);
+  --shadow-card-hover: 0 14px 30px -4px rgba(18, 59, 117, 0.12), 0 6px 12px -2px rgba(18, 59, 117, 0.06);
+  --shadow-elevated: 0 24px 48px -12px rgba(18, 59, 117, 0.16), 0 8px 16px -4px rgba(18, 59, 117, 0.08);
+  --shadow-orange: 0 10px 25px -5px rgba(242, 140, 40, 0.38);
+  --shadow-royal: 0 10px 25px -5px rgba(36, 99, 197, 0.35);
+}
+
+/* ==========================================================================
+   GLOBAL RESET & BASE TYPOGRAPHY
+   ========================================================================== */
+
+html {
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Scoped smooth scrolling for in-page anchors without triggering Next.js html element warning */
+@media (prefers-reduced-motion: no-preference) {
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Accessible focus styling */
+:focus-visible {
+  outline: 2px solid var(--brand-royal);
+  outline-offset: 2px;
+}
+
+/* Selection highlight */
+::selection {
+  background-color: #dfecf9;
+  color: #123b75;
+}
+
+/* Professional scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f4f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c3d0e0;
+  border-radius: 5px;
+  border: 2px solid #f1f4f9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9aaec6;
+}
+
+/* ==========================================================================
+   REUSABLE DESIGN SYSTEM UTILITY CLASSES
+   ========================================================================== */
+
+@layer utilities {
+  /* Layout Containers */
+  .container-site {
+    width: 100%;
+    max-width: 80rem; /* 1280px */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  @media (min-width: 640px) {
+    .container-site {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container-site {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  .container-narrow {
+    width: 100%;
+    max-width: 54rem; /* 864px */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  @media (min-width: 640px) {
+    .container-narrow {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  /* Section Spacing System (Uniform compact 1rem vertical padding) */
+  .section-padding {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .section-padding-hero {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  /* Clean Card Base */
+  .card-base {
+    background-color: #ffffff;
+    border: 1px solid #dfe1e6;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px -2px rgba(18, 59, 117, 0.06);
+    transition: all 250ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .card-interactive {
+    background-color: #ffffff;
+    border: 1px solid #dfe1e6;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px -2px rgba(18, 59, 117, 0.06);
+    transition: all 250ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .card-interactive:hover {
+    transform: translateY(-2px);
+    border-color: #b9dbfa;
+    box-shadow: 0 14px 30px -4px rgba(18, 59, 117, 0.12);
+  }
+
+  /* Infinite Horizontal Marquee Utilities */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes marquee-reverse {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 32s linear infinite;
+    will-change: transform;
+  }
+
+  .animate-marquee-reverse {
+    animation: marquee-reverse 32s linear infinite;
+    will-change: transform;
+  }
+
+  /* ==========================================================================
+     GPU-COMPOSITED CSS MICRO-ANIMATIONS (Zero-JS 60fps Symbol & Hero Motion)
+     Uses transform/opacity only to prevent layout thrashing & main-thread jank
+     ========================================================================== */
+  @keyframes is-float {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(0, -3.5px, 0); }
+  }
+
+  @keyframes is-float-lg {
+    0%, 100% { transform: translate3d(0, 0, 0) scale(1.01); }
+    50% { transform: translate3d(0, -6px, 0) scale(1.035); }
+  }
+
+  @keyframes is-pulse-soft {
+    0%, 100% { transform: scale(0.95); opacity: 0.72; }
+    50% { transform: scale(1.08); opacity: 1; }
+  }
+
+  @keyframes is-halo {
+    0% { transform: scale(0.88); opacity: 0.65; }
+    100% { transform: scale(1.24); opacity: 0; }
+  }
+
+  @keyframes is-spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  @keyframes is-spin-reverse {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
+  }
+
+  @keyframes is-wiggle {
+    0%, 100% { transform: rotate(-4deg); }
+    50% { transform: rotate(4deg); }
+  }
+
+  @keyframes is-sheen {
+    0% { transform: translate3d(-140%, 0, 0) skewX(-12deg); }
+    35%, 100% { transform: translate3d(260%, 0, 0) skewX(-12deg); }
+  }
+
+  @keyframes is-progress {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0%); }
+  }
+
+  @keyframes is-dash-draw {
+    0%, 100% { stroke-dashoffset: 48; }
+    45%, 85% { stroke-dashoffset: 0; }
+  }
+
+  @keyframes is-orbit-bob {
+    0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+    50% { transform: translate3d(2px, -3px, 0) rotate(4deg); }
+  }
+
+  .anim-float {
+    animation: is-float 2.8s ease-in-out infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  .anim-float-slow {
+    animation: is-float 3.8s ease-in-out infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  .anim-float-lg {
+    animation: is-float-lg 4.2s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .anim-pulse-soft {
+    animation: is-pulse-soft 2.4s ease-in-out infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  .anim-halo {
+    animation: is-halo 2.4s ease-out infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  .anim-spin-slow {
+    animation: is-spin-slow 8s linear infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  .anim-spin-reverse {
+    animation: is-spin-reverse 6s linear infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  .anim-wiggle {
+    animation: is-wiggle 2.6s ease-in-out infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  .anim-sheen {
+    animation: is-sheen 6.5s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .anim-hero-progress {
+    animation: is-progress 3s linear forwards;
+    will-change: transform;
+  }
+
+  .anim-dash {
+    stroke-dasharray: 48;
+    animation: is-dash-draw 2.6s ease-in-out infinite;
+  }
+
+  .anim-orbit-bob {
+    animation: is-orbit-bob 3s ease-in-out infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-marquee,
+    .animate-marquee-reverse,
+    .anim-float,
+    .anim-float-slow,
+    .anim-float-lg,
+    .anim-pulse-soft,
+    .anim-halo,
+    .anim-spin-slow,
+    .anim-spin-reverse,
+    .anim-wiggle,
+    .anim-sheen,
+    .anim-hero-progress,
+    .anim-dash,
+    .anim-orbit-bob {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+
+  .mask-gradient-x {
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  }
+
+  /* Official Insurance Sathi Logo Color Combination Utilities */
+  .text-logo-navy {
+    color: #0f2e8a;
+  }
+
+  .text-logo-gradient {
+    background-image: linear-gradient(to right, #ff6b00, #16a34a, #0284c7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .text-logo-gradient-dark {
+    background-image: linear-gradient(to right, #ff922b, #4ade80, #38bdf8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .bg-logo-gradient {
+    background-image: linear-gradient(to right, #ff6b00, #16a34a, #0284c7);
+  }
+}

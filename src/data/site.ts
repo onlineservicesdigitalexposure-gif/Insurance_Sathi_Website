@@ -1,0 +1,111 @@
+import type { SiteConfig } from "@/types";
+
+export const SITE_CONFIG: SiteConfig = {
+  name: "Insurance Sathi",
+  tagline: "All Insurance Solutions Under One Roof",
+  owner: {
+    name: "MD Abrahim",
+    role: "Founder & Principal Advisor",
+    establishedDate: "20 May 2023",
+  },
+  contact: {
+    phone: "+91 93323 64068",
+    phoneRaw: "9332364068",
+    whatsapp: "+91 93323 64068",
+    whatsappRaw: "919332364068",
+    email: "mdabrahim.mollah@gmail.com",
+  },
+  address: {
+    landmark: "Duckbanglow More",
+    street: "Duckbanglow More, Jessore Road",
+    city: "Barasat",
+    district: "North 24 Parganas",
+    state: "West Bengal",
+    country: "India",
+    postalCode: "700124",
+    formatted: "Duckbanglow More, Barasat, North 24 Parganas, West Bengal, India - 700124",
+  },
+  workingHours: {
+    days: "Monday to Saturday",
+    timing: "9:30 AM – 7:30 PM",
+    sundayNotice: "Sunday by prior appointment for urgent claims assistance",
+    claimsEmergency: "24/7 Telephone Guidance for Emergency Hospitalizations",
+  },
+  targetLocations: ["Barasat", "Madhyamgram", "Habra"] as const,
+  socials: [
+    {
+      platform: "Facebook",
+      url: "https://www.facebook.com/insurancesathi",
+      label: "Insurance Sathi on Facebook",
+    },
+    {
+      platform: "WhatsApp",
+      url: "https://wa.me/919332364068?text=Hello%20Insurance%20Sathi,%20I%20need%20assistance%20with%20insurance.",
+      label: "Chat on WhatsApp",
+    },
+    {
+      platform: "Phone",
+      url: "tel:9332364068",
+      label: "Direct Call",
+    },
+    {
+      platform: "Email",
+      url: "mailto:mdabrahim.mollah@gmail.com",
+      label: "Email Us",
+    },
+  ],
+  mainNav: [
+    { label: "Home", href: "/" },
+    { label: "Insurance", href: "/insurance" },
+    { label: "Services", href: "/services" },
+    { label: "About Us", href: "/about" },
+    { label: "Blogs", href: "/blog" },
+    { label: "Contact Us", href: "/contact" },
+  ],
+  footerNav: {
+    services: [
+      { label: "Purchase New Policy", href: "/services/purchase-new-policy" },
+      { label: "Policy Services & Updates", href: "/services/policy-services" },
+      { label: "Premium Deposit Assistance", href: "/services/premium-deposit-assistance" },
+      { label: "Lapsed Policy Revival", href: "/services/lapsed-policy-services" },
+      { label: "Insurance Claim Assistance", href: "/services/insurance-claim-assistance" },
+    ],
+    insurance: [
+      { label: "Life Insurance", href: "/insurance/life-insurance" },
+      { label: "Health Insurance", href: "/insurance/health-insurance" },
+      { label: "Motor Insurance", href: "/insurance/motor-insurance" },
+      { label: "Term Insurance", href: "/insurance/term-insurance" },
+      { label: "Home Insurance", href: "/insurance/home-insurance" },
+      { label: "Travel Insurance", href: "/insurance/travel-insurance" },
+      { label: "Business Insurance", href: "/insurance/business-insurance" },
+      { label: "Personal Accident", href: "/insurance/personal-accident-insurance" },
+    ],
+    quickLinks: [
+      { label: "Home", href: "/" },
+      { label: "Insurance", href: "/insurance" },
+      { label: "Services", href: "/services" },
+      { label: "About Us", href: "/about" },
+      { label: "Blogs", href: "/blog" },
+      { label: "Contact Us", href: "/contact" },
+    ],
+  },
+  meta: {
+    defaultTitle: "Insurance Sathi | All Insurance Solutions Under One Roof in Barasat",
+    titleTemplate: "%s | Insurance Sathi - Barasat, West Bengal",
+    defaultDescription:
+      "Insurance Sathi, founded by MD Abrahim at Duckbanglow More, Barasat, provides expert insurance advisory, policy servicing, premium deposit help, and dedicated claims assistance across Barasat, Madhyamgram, and Habra.",
+    keywords: [
+      "Insurance Sathi",
+      "MD Abrahim Insurance",
+      "Insurance Advisor Barasat",
+      "Duckbanglow More Barasat Insurance",
+      "Claim Assistance Barasat",
+      "Lapsed Policy Revival North 24 Parganas",
+      "Health Insurance Consultant Madhyamgram",
+      "Motor Insurance Habra",
+      "Life Insurance Agent Barasat",
+      "All Insurance Solutions Under One Roof",
+    ],
+    locale: "en_IN",
+  },
+};

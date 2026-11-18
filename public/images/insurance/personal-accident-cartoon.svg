@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="bgSky" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#EEF2FF"/>
+      <stop offset="50%" stop-color="#E0F2FE"/>
+      <stop offset="100%" stop-color="#FFF7ED"/>
+    </linearGradient>
+    <radialGradient id="auraGlow" cx="50%" cy="48%" r="44%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.28"/>
+      <stop offset="65%" stop-color="#0284C7" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="domeStroke" x1="170" y1="90" x2="630" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF6B00"/>
+      <stop offset="50%" stop-color="#16A34A"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="helmetGrad" x1="310" y1="120" x2="460" y2="250" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="55%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0F2E8A"/>
+    </linearGradient>
+    <linearGradient id="jacketGrad" x1="295" y1="295" x2="480" y2="485" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF8C24"/>
+      <stop offset="100%" stop-color="#EA580C"/>
+    </linearGradient>
+    <linearGradient id="shield3d" x1="470" y1="160" x2="640" y2="395" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="55%" stop-color="#1D4ED8"/>
+      <stop offset="100%" stop-color="#0F2E8A"/>
+    </linearGradient>
+    <linearGradient id="skinTone" x1="340" y1="185" x2="440" y2="295" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FDBA74"/>
+      <stop offset="100%" stop-color="#EA8C55"/>
+    </linearGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0F2E8A" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Soft Studio Background -->
+  <rect width="800" height="600" fill="url(#bgSky)"/>
+  <circle cx="400" cy="300" r="275" fill="url(#auraGlow)"/>
+
+  <!-- Subtle Ground Shadow & Path -->
+  <ellipse cx="385" cy="528" rx="220" ry="26" fill="#CBD5E1" fill-opacity="0.55"/>
+
+  <!-- Protective Energy Safety Dome -->
+  <circle cx="400" cy="305" r="230" fill="white" fill-opacity="0.32" stroke="url(#domeStroke)" stroke-width="5" stroke-dasharray="14 10"/>
+  <circle cx="400" cy="305" r="204" fill="white" fill-opacity="0.25" stroke="#818CF8" stroke-opacity="0.4" stroke-width="2.5"/>
+
+  <!-- Cheerful 3D-Shaded Cartoon Commuter Character -->
+  <g filter="url(#softShadow)">
+    <!-- Legs & Shoes -->
+    <rect x="335" y="435" width="34" height="75" rx="16" fill="#1E293B"/>
+    <rect x="392" y="435" width="34" height="75" rx="16" fill="#1E293B"/>
+    <rect x="326" y="496" width="52" height="22" rx="11" fill="#0F2E8A"/>
+    <rect x="386" y="496" width="52" height="22" rx="11" fill="#0F2E8A"/>
+
+    <!-- Warm Safety Jacket Torso -->
+    <path d="M298 345C302 298 336 280 380 280C424 280 458 298 462 345L454 452C453 462 444 470 433 470H327C316 470 307 462 306 452L298 345Z" fill="url(#jacketGrad)"/>
+    <!-- Jacket White Reflective Stripes -->
+    <rect x="307" y="392" width="146" height="12" rx="6" fill="white" fill-opacity="0.9"/>
+    <rect x="373" y="290" width="14" height="175" rx="7" fill="#C2410C" fill-opacity="0.45"/>
+
+    <!-- Waving Left Arm (Thumbs Up!) -->
+    <path d="M306 318C272 328 248 355 245 388" stroke="#EA580C" stroke-width="32" stroke-linecap="round"/>
+    <circle cx="244" cy="396" r="18" fill="url(#skinTone)"/>
+
+    <!-- Right Arm Holding Protective Shield -->
+    <path d="M454 320C482 332 505 344 522 336" stroke="#EA580C" stroke-width="32" stroke-linecap="round"/>
+    <circle cx="525" cy="334" r="18" fill="url(#skinTone)"/>
+
+    <!-- Neck -->
+    <rect x="362" y="258" width="36" height="32" rx="14" fill="#E68A52"/>
+
+    <!-- Smiling Cartoon Head -->
+    <rect x="322" y="156" width="116" height="118" rx="54" fill="url(#skinTone)"/>
+    <!-- Ears -->
+    <circle cx="320" cy="218" r="13" fill="#EA8C55"/>
+    <circle cx="440" cy="218" r="13" fill="#EA8C55"/>
+
+    <!-- Expressive Eyes -->
+    <ellipse cx="358" cy="212" rx="9" ry="11" fill="#0F172A"/>
+    <ellipse cx="404" cy="212" rx="9" ry="11" fill="#0F172A"/>
+    <circle cx="361" cy="208" r="3.5" fill="white"/>
+    <circle cx="407" cy="208" r="3.5" fill="white"/>
+    <!-- Happy Eyebrows -->
+    <path d="M344 195C350 189 362 189 369 194" stroke="#3B1D0E" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M393 194C400 189 412 189 418 195" stroke="#3B1D0E" stroke-width="4.5" stroke-linecap="round"/>
+    <!-- Rosy Cheeks -->
+    <ellipse cx="343" cy="228" rx="9" ry="5" fill="#F43F5E" fill-opacity="0.25"/>
+    <ellipse cx="417" cy="228" rx="9" ry="5" fill="#F43F5E" fill-opacity="0.25"/>
+    <!-- Big Confident Smile -->
+    <path d="M356 236C365 253 395 253 404 236H356Z" fill="white" stroke="#9A3412" stroke-width="3" stroke-linejoin="round"/>
+
+    <!-- Sleek Glossy Blue Safety Helmet -->
+    <path d="M312 198C312 142 342 114 380 114C418 114 448 142 448 198C430 186 406 180 380 180C354 180 330 186 312 198Z" fill="url(#helmetGrad)" stroke="white" stroke-width="3.5"/>
+    <!-- Helmet Specular Shine -->
+    <path d="M336 144C348 130 368 124 386 126" stroke="white" stroke-opacity="0.65" stroke-width="7" stroke-linecap="round"/>
+    <!-- Visor Strip -->
+    <path d="M318 192C338 182 360 178 380 178C400 178 422 182 442 192" stroke="#FDE047" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Giant Radiant 3D First-Aid Protection Shield (Right) -->
+  <g filter="url(#softShadow)">
+    <path d="M560 165L655 202V290C655 352 614 401 560 424C506 401 465 352 465 290V202L560 165Z" fill="url(#shield3d)" stroke="white" stroke-width="6"/>
+    <path d="M560 178L640 210V288C640 342 605 385 560 406V178Z" fill="white" fill-opacity="0.12"/>
+    <!-- Bright White First-Aid Cross -->
+    <rect x="542" y="236" width="36" height="106" rx="12" fill="white"/>
+    <rect x="507" y="271" width="106" height="36" rx="12" fill="white"/>
+    <!-- Green Verified Badge on Shield -->
+    <circle cx="634" cy="368" r="28" fill="#16A34A" stroke="white" stroke-width="5"/>
+    <path d="M622 368L631 377L648 358" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Floating Protection Sparkles & 24/7 Care Badge (Top Left) -->
+  <g filter="url(#softShadow)">
+    <rect x="132" y="150" width="132" height="58" rx="18" fill="white" stroke="#E0E7FF" stroke-width="3"/>
+    <circle cx="164" cy="179" r="15" fill="#16A34A"/>
+    <path d="M158 179L162 183L171 174" stroke="white" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="188" y="176" fill="#0F2E8A" font-size="16" font-weight="900" font-family="system-ui, sans-serif">24/7</text>
+    <text x="188" y="194" fill="#64748B" font-size="11" font-weight="700" font-family="system-ui, sans-serif">Safety Shield</text>
+  </g>
+
+  <!-- Golden Floating Sparkle Stars -->
+  <circle cx="220" cy="270" r="7" fill="#FF6B00" fill-opacity="0.8"/>
+  <circle cx="675" cy="175" r="8" fill="#FBBF24"/>
+  <circle cx="195" cy="445" r="6" fill="#0284C7" fill-opacity="0.7"/>
+  <circle cx="660" cy="455" r="7" fill="#16A34A" fill-opacity="0.75"/>
+</svg>

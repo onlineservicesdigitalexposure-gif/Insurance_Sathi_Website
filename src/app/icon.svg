@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none">
+  <!-- Navy Blue Shield Background -->
+  <path d="M16 2 C22 2 28 4 28 11 C28 20 16 28 16 30 C16 28 4 20 4 11 C4 4 10 2 16 2 Z" fill="#123B75" />
+  
+  <!-- Orange Inner Shield Border Accent -->
+  <path d="M16 4.5 C20.5 4.5 25.5 6 25.5 11.5 C25.5 18.5 16 25.5 16 27 C16 25.5 6.5 18.5 6.5 11.5 C6.5 6 11.5 4.5 16 4.5 Z" stroke="#F28C28" stroke-width="1.5" fill="#123B75" />
+  
+  <!-- White Monogram 'IS' -->
+  <text x="16" y="19" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="12" text-anchor="middle" letter-spacing="-0.5">IS</text>
+</svg>
