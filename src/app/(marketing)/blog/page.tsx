@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getAllBlogPosts, getAllBlogCategories, SITE_CONFIG } from "@/data";
-import { BlogHero, BlogListingView } from "@/components/blog";
+import { BlogHero, BlogListingView, BlogVideoSection } from "@/components/blog";
 
 const BASE_URL = "https://insurancesathi.in";
 
@@ -92,6 +92,8 @@ export default function BlogListingPage() {
       />
       <div className="min-h-screen">
         <BlogHero />
+        {/* Dedicated Video Section - ONLY on Blog Page */}
+        <BlogVideoSection />
         <BlogListingView posts={posts} categories={categories} />
       </div>
     </>

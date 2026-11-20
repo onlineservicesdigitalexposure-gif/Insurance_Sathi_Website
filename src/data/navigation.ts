@@ -50,7 +50,7 @@ export const HEADER_NAV_ITEMS: readonly NavItem[] = [
       {
         label: "Investment Plans",
         href: "/insurance/investment-plans",
-        description: "Guaranteed return savings, child future & retirement annuities",
+        description: "Guaranteed return savings, SIP & mutual funds, child future plans",
         iconName: "PiggyBank",
         badge: "Wealth",
       },

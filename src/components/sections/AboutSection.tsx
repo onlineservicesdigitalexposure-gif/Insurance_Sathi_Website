@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   ShieldCheck,
   MapPin,
@@ -24,23 +25,43 @@ export function AboutSection() {
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-16">
           {/* Left Column: Visual Office & Founder Card */}
           <div className="lg:col-span-5 flex flex-col justify-center">
-            <div className="relative rounded-3xl border border-brand-border bg-white p-6 sm:p-8 shadow-card">
-              {/* Emblem Header */}
-              <div className="flex items-center justify-between border-b border-brand-border pb-5">
-                <div className="flex items-center gap-3">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-navy text-white shadow-xs">
-                    <ShieldCheck className="h-7 w-7 text-brand-orange" aria-hidden="true" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-extrabold text-brand-dark leading-tight">
-                      {SITE_CONFIG.name}
-                    </h3>
-                    <p className="text-xs text-brand-royal font-semibold">
-                      {SITE_CONFIG.tagline}
-                    </p>
-                  </div>
+            <div className="relative rounded-3xl border border-brand-border bg-white shadow-card overflow-hidden">
+              {/* Full View Authentic Recognition Photo */}
+              <div className="relative w-full aspect-[1538/1023] overflow-hidden bg-slate-900 group">
+                <Image
+                  src="/images/AboutImage.jpeg"
+                  alt="MD Abrahim receiving Certificate of Appreciation at Kolkata insurance felicitation"
+                  width={1538}
+                  height={1023}
+                  className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+                  sizes="(max-width: 1024px) 100vw, 480px"
+                />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-white drop-shadow-md">
+                  <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-navy/90 backdrop-blur-md px-3 py-1 text-[11px] font-bold text-amber-300 border border-white/20">
+                    <ShieldCheck className="h-3.5 w-3.5 text-brand-orange" />
+                    <span>Founder Felicitation • PE Kolkata</span>
+                  </span>
                 </div>
               </div>
+
+              <div className="p-6 sm:p-7">
+                {/* Emblem Header */}
+                <div className="flex items-center justify-between border-b border-brand-border pb-4">
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-navy text-white shadow-xs">
+                      <ShieldCheck className="h-6 w-6 text-brand-orange" aria-hidden="true" />
+                    </div>
+                    <div>
+                      <h3 className="text-base font-extrabold text-brand-dark leading-tight">
+                        {SITE_CONFIG.name}
+                      </h3>
+                      <p className="text-xs text-brand-royal font-semibold">
+                        {SITE_CONFIG.tagline}
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
               {/* Founder & Milestone Information */}
               <div className="mt-6 space-y-4">
@@ -99,6 +120,7 @@ export function AboutSection() {
               </div>
             </div>
           </div>
+        </div>
 
           {/* Right Column: Narrative & Customer-First Philosophy */}
           <div className="lg:col-span-7 flex flex-col items-start text-left">

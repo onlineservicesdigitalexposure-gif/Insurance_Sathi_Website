@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Award,
   MapPin,
@@ -8,7 +9,6 @@ import {
   Phone,
   MessageCircle,
   ArrowRight,
-  User,
   Sparkles,
 } from "lucide-react";
 import { SITE_CONFIG } from "@/data";
@@ -220,49 +220,73 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              {/* Founder Profile Card */}
+              {/* Founder Profile Card with Authentic Felicitation Photo */}
               <div className="lg:col-span-5">
-                <div className="rounded-3xl border border-brand-border bg-gradient-to-br from-slate-50 to-white p-8 shadow-card text-center relative overflow-hidden">
-                  <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-3xl bg-brand-navy text-white shadow-xl">
-                    <User className="h-12 w-12 text-brand-orange" />
+                <div className="rounded-3xl border border-brand-border bg-gradient-to-br from-slate-50 via-white to-slate-50/80 shadow-card relative overflow-hidden flex flex-col">
+                  {/* Full View Authentic Recognition Photo */}
+                  <div className="relative w-full aspect-[1538/1023] overflow-hidden bg-slate-900 group">
+                    <Image
+                      src="/images/AboutImage.jpeg"
+                      alt="MD Abrahim receiving Certificate of Appreciation at Kolkata felicitation ceremony"
+                      width={1538}
+                      height={1023}
+                      priority
+                      className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
+                      sizes="(max-width: 1024px) 100vw, 480px"
+                    />
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+
+                    {/* Recognition Badge Overlay */}
+                    <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-white drop-shadow-md">
+                      <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-navy/90 backdrop-blur-md px-3 py-1 text-[11px] font-bold text-amber-300 border border-white/20">
+                        <Award className="h-3.5 w-3.5 text-amber-400" />
+                        <span>Felicitation &amp; Recognition</span>
+                      </span>
+                      <span className="inline-flex items-center rounded-full bg-black/60 backdrop-blur-md px-2.5 py-1 text-[10px] font-semibold text-slate-200 border border-white/10">
+                        PE Kolkata
+                      </span>
+                    </div>
                   </div>
 
-                  <h3 className="mt-6 text-xl font-bold text-brand-dark">MD Abrahim</h3>
-                  <p className="text-xs font-semibold text-brand-royal">Founder &amp; Principal Insurance Advisor</p>
-                  <p className="mt-1 text-xs text-brand-muted">Insurance Sathi • Established 20 May 2023</p>
+                  {/* Card Content & Details */}
+                  <div className="p-6 sm:p-7 text-center">
+                    <h3 className="text-xl sm:text-2xl font-black text-brand-dark">MD Abrahim</h3>
+                    <p className="text-xs font-bold text-brand-royal mt-1">Founder &amp; Principal Insurance Advisor</p>
+                    <p className="mt-0.5 text-xs text-brand-muted">Insurance Sathi • Established 20 May 2023</p>
 
-                  <div className="mt-6 border-t border-slate-200 pt-6 space-y-3 text-xs text-left text-slate-700">
-                    <div className="flex items-center gap-2.5">
-                      <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0" />
-                      <span>Dedicated in-person guidance across Barasat</span>
+                    <div className="mt-6 border-t border-slate-200 pt-5 space-y-3 text-xs text-left text-slate-700">
+                      <div className="flex items-center gap-2.5">
+                        <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0" />
+                        <span>Dedicated in-person guidance across Barasat</span>
+                      </div>
+                      <div className="flex items-center gap-2.5">
+                        <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0" />
+                        <span>Doorstep service in Madhyamgram &amp; Habra</span>
+                      </div>
+                      <div className="flex items-center gap-2.5">
+                        <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0" />
+                        <span>Specialist in discontinued &amp; lapsed policy revivals</span>
+                      </div>
                     </div>
-                    <div className="flex items-center gap-2.5">
-                      <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0" />
-                      <span>Doorstep service in Madhyamgram &amp; Habra</span>
-                    </div>
-                    <div className="flex items-center gap-2.5">
-                      <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0" />
-                      <span>Specialist in discontinued &amp; lapsed policy revivals</span>
-                    </div>
-                  </div>
 
-                  <div className="mt-8 flex gap-3">
-                    <a
-                      href="https://wa.me/919332364068?text=Hello%20MD%20Abrahim,%20I%20would%20like%20to%20consult%20with%20you%20regarding%20insurance."
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 py-2.5 text-xs font-bold text-white hover:bg-emerald-700 transition-colors shadow-sm"
-                    >
-                      <MessageCircle className="h-4 w-4" />
-                      <span>WhatsApp</span>
-                    </a>
-                    <a
-                      href="tel:9332364068"
-                      className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl border border-brand-border bg-white py-2.5 text-xs font-bold text-brand-navy hover:bg-slate-50 transition-colors"
-                    >
-                      <Phone className="h-4 w-4 text-brand-orange" />
-                      <span>Call Advisor</span>
-                    </a>
+                    <div className="mt-7 flex gap-3">
+                      <a
+                        href="https://wa.me/919332364068?text=Hello%20MD%20Abrahim,%20I%20would%20like%20to%20consult%20with%20you%20regarding%20insurance."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 py-3 text-xs font-bold text-white hover:bg-emerald-700 transition-colors shadow-sm"
+                      >
+                        <MessageCircle className="h-4 w-4" />
+                        <span>WhatsApp</span>
+                      </a>
+                      <a
+                        href="tel:9332364068"
+                        className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl border border-brand-border bg-white py-3 text-xs font-bold text-brand-navy hover:bg-slate-50 transition-colors shadow-xs"
+                      >
+                        <Phone className="h-4 w-4 text-brand-orange" />
+                        <span>Call Advisor</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

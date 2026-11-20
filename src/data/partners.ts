@@ -9,7 +9,7 @@ export interface InsurancePartner {
 }
 
 export const INSURANCE_PARTNERS_DATA: readonly InsurancePartner[] = [
-  // Row 1 from Official Banner
+  // Leading Life Insurers
   {
     id: "lic",
     name: "Life Insurance Corporation of India",
@@ -38,6 +38,15 @@ export const INSURANCE_PARTNERS_DATA: readonly InsurancePartner[] = [
     badgeText: "Banker's Trust",
   },
   {
+    id: "icici-prudential",
+    name: "ICICI Prudential Life Insurance",
+    shortName: "ICICI Prudential",
+    category: "life",
+    tagline: "Zimmedari Ka Humsafar",
+    brandColor: "#8B2131",
+    badgeText: "Term & Pension Leader",
+  },
+  {
     id: "tata-aia",
     name: "Tata AIA Life Insurance",
     shortName: "TATA AIA",
@@ -54,6 +63,64 @@ export const INSURANCE_PARTNERS_DATA: readonly InsurancePartner[] = [
     tagline: "Bharosa. Har Kadam Par.",
     brandColor: "#002B49",
     badgeText: "Term & Savings",
+  },
+
+  // Leading Standalone Health Insurers
+  {
+    id: "star-health",
+    name: "Star Health and Allied Insurance",
+    shortName: "Star Health",
+    category: "health",
+    tagline: "The Health Insurance Specialist",
+    brandColor: "#0B2A4A",
+    badgeText: "14,000+ Hospital Network",
+  },
+  {
+    id: "care-health",
+    name: "Care Health Insurance",
+    shortName: "Care Health",
+    category: "health",
+    tagline: "Health Ki Care",
+    brandColor: "#0072CE",
+    badgeText: "Care Supreme & Super NCB",
+  },
+  {
+    id: "niva-bupa",
+    name: "Niva Bupa Health Insurance",
+    shortName: "Niva Bupa",
+    category: "health",
+    tagline: "Zindagi Ko Claim Kar Le",
+    brandColor: "#E05A47",
+    badgeText: "ReAssure 2.0 & Lock Age",
+  },
+  {
+    id: "manipal-cigna",
+    name: "ManipalCigna Health Insurance",
+    shortName: "ManipalCigna",
+    category: "health",
+    tagline: "Health Hai Toh Life Hai",
+    brandColor: "#008288",
+    badgeText: "ProHealth Cashless Network",
+  },
+
+  // Leading General, Motor & Health Insurers
+  {
+    id: "icici-lombard",
+    name: "ICICI Lombard General Insurance",
+    shortName: "ICICI Lombard Elevate",
+    category: "general",
+    tagline: "Nibhaye Vaade | Elevate Infinite Care",
+    brandColor: "#8B2131",
+    badgeText: "Elevate Cashless & Motor",
+  },
+  {
+    id: "hdfc-ergo",
+    name: "HDFC ERGO General Insurance",
+    shortName: "HDFC ERGO",
+    category: "general",
+    tagline: "Take it easy!",
+    brandColor: "#004B87",
+    badgeText: "Optima Secure & Motor",
   },
   {
     id: "bajaj-allianz",
@@ -73,8 +140,6 @@ export const INSURANCE_PARTNERS_DATA: readonly InsurancePartner[] = [
     brandColor: "#1B365D",
     badgeText: "Public Sector General",
   },
-
-  // Row 2 from Official Banner
   {
     id: "national-insurance",
     name: "National Insurance Company Limited",
@@ -138,8 +203,6 @@ export const INSURANCE_PARTNERS_DATA: readonly InsurancePartner[] = [
     brandColor: "#00205B",
     badgeText: "Vehicle & Home Protection",
   },
-
-  // Row 3 from Official Banner
   {
     id: "digit-insurance",
     name: "Go Digit General Insurance",

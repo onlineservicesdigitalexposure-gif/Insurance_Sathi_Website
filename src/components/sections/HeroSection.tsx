@@ -100,7 +100,7 @@ const HERO_INSURANCE_OPTIONS: readonly HeroInsuranceOption[] = [
   {
     id: "investment-plans",
     title: "Investment Plans",
-    subtitle: "Guaranteed & ULIP",
+    subtitle: "Guaranteed & SIP",
     href: "/insurance/investment-plans",
     lightBg: "bg-amber-50",
     textColor: "text-amber-700",

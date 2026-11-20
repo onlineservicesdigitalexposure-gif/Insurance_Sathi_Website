@@ -2,6 +2,10 @@ import { Phone, Mail, Clock, MessageCircle } from "lucide-react";
 import { SITE_CONFIG } from "@/data/site";
 
 export function TopBar() {
+  const facebookUrl =
+    SITE_CONFIG.socials.find((s) => s.platform === "Facebook")?.url ||
+    "https://www.facebook.com/share/19xYK42tJL/";
+
   return (
     <aside
       aria-label="Quick Business Contact & Hours"
@@ -37,14 +41,32 @@ export function TopBar() {
           </div>
         </div>
 
-        {/* Right Side: WhatsApp Quick Link */}
-        <div className="flex items-center gap-3 sm:gap-4 shrink-0">
+        {/* Right Side: Facebook & WhatsApp Quick Links */}
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+          {/* Facebook Official Page */}
+          <a
+            href={facebookUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 rounded-full bg-[#1877F2]/20 px-2.5 py-0.5 text-[11px] font-bold text-blue-300 border border-[#1877F2]/35 transition-all hover:bg-[#1877F2] hover:text-white hover:border-[#1877F2] shadow-xs"
+            aria-label="Follow Insurance Sathi on Facebook"
+          >
+            <svg
+              className="h-3 w-3 fill-current"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+            <span>Facebook</span>
+          </a>
+
           {/* WhatsApp Direct Action */}
           <a
             href={`https://wa.me/${SITE_CONFIG.contact.whatsappRaw}?text=Hello%20Insurance%20Sathi,%20I%20would%20like%20to%20consult%20about%20insurance.`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-full bg-emerald-600/20 px-2.5 py-0.5 text-[11px] font-bold text-emerald-300 border border-emerald-500/30 transition-all hover:bg-emerald-600 hover:text-white hover:border-emerald-600"
+            className="inline-flex items-center gap-1.5 rounded-full bg-emerald-600/20 px-2.5 py-0.5 text-[11px] font-bold text-emerald-300 border border-emerald-500/30 transition-all hover:bg-emerald-600 hover:text-white hover:border-emerald-600 shadow-xs"
             aria-label="Direct WhatsApp Consultation"
           >
             <MessageCircle className="h-3 w-3" aria-hidden="true" />

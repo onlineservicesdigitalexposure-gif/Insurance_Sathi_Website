@@ -1333,28 +1333,28 @@ export const INSURANCE_CATEGORIES_DATA: readonly InsuranceCategoryItem[] = [
   {
     id: "cat-investment-plans",
     slug: "investment-plans",
-    aliases: ["investment", "savings-plans", "ulip", "child-plans", "guaranteed-return-plans", "retirement-plans"],
+    aliases: ["investment", "savings-plans", "sip", "mutual-funds", "ulip", "child-plans", "guaranteed-return-plans", "retirement-plans"],
     title: "Investment Plans",
     heroHeading: "Goal-Based Investment & Wealth Creation Plans with Life Protection",
     heroSubheading:
-      "Compare Guaranteed Return savings, Child Education Funds, Retirement Annuities, and Market-Linked ULIPs from India's premier life insurers. Consult with MD Abrahim at Duckbanglow More, Barasat.",
+      "Compare Guaranteed Return savings, Child Education Funds, Retirement Annuities, and wealth-building SIP & Mutual Funds from India's premier asset managers and life insurers. Consult with MD Abrahim at Duckbanglow More, Barasat.",
     tagline: "Grow Wealth & Protect Your Family's Financial Future",
     shortDescription:
-      "Structured savings and investment plans combining tax-free returns, sovereign safety, and life protection for children's education and retirement.",
+      "Structured wealth creation and savings plans combining guaranteed returns, high-growth SIP & Mutual Funds, and family protection for milestones and retirement.",
     fullOverview:
-      "Investment and savings insurance plans provide a disciplined, tax-efficient pathway to build long-term wealth while securing an immediate life protection cover. Whether you are planning for your child's higher education, marriage, or creating a guaranteed pension for retirement, these plans offer a balance of safety, growth, and sovereign/private insurer security. At Insurance Sathi, we analyze bonus track records, premium-to-payout ratios, lock-in terms, and tax benefits under Section 80C and Section 10(10D) to guide families across Barasat, Madhyamgram, and Habra.",
+      "Investment and savings plans provide a disciplined, tax-efficient pathway to build long-term wealth while securing your family's future. Whether you are planning for your child's higher education, marriage, retirement pension, or wealth accumulation through Systematic Investment Plans (SIP) and Mutual Funds, we provide customized portfolio guidance balancing guaranteed safety and market-linked equity growth. At Insurance Sathi, we analyze fund performance, bonus track records, expense ratios, lock-in terms, and tax benefits under Section 80C and Section 10(10D) to guide families across Barasat, Madhyamgram, and Habra.",
     iconName: "PiggyBank",
     imagePath: "/images/insurance/investment-plans-cartoon.webp",
-    imageAlt: "Investment and savings insurance plans advisory in Barasat by Insurance Sathi",
+    imageAlt: "Investment, savings plans, SIP and mutual funds advisory in Barasat by Insurance Sathi",
     coverageHighlights: [
       "Guaranteed tax-free maturity payouts on non-linked endowment savings plans",
-      "Dual benefit: Capital growth compounding plus active life cover protection",
+      "Disciplined wealth compounding through Systematic Investment Plans (SIP) & Mutual Funds",
       "Inbuilt Waiver of Premium (WoP) ensuring goals mature even in unforeseen events",
       "Tax exemptions under Section 80C and Section 10(10D) as per prevailing income tax laws",
     ],
     commonPolicyTypes: [
       "Guaranteed Return Savings Plans (Fixed non-market linked maturity)",
-      "Unit Linked Insurance Plans (ULIPs with market equity upside)",
+      "Systematic Investment Plans (SIP) & Mutual Funds (Disciplined equity & hybrid compounding)",
       "Child Future & Higher Education Milestone Plans",
       "Retirement & Immediate Annuity Guaranteed Pension Plans",
       "Capital Guarantee Solutions (Balanced debt and equity structure)",
@@ -1372,14 +1372,14 @@ export const INSURANCE_CATEGORIES_DATA: readonly InsuranceCategoryItem[] = [
         ],
       },
       {
-        title: "Unit Linked Insurance Plans (ULIPs)",
+        title: "SIP & Mutual Funds (Wealth Creation)",
         description:
-          "Market-linked wealth creation plans combining life insurance protection with equity and debt fund investment choices.",
-        suitableFor: "Young professionals and aggressive wealth builders seeking inflation-beating long-term equity compounding.",
+          "Systematic Investment Plans (SIP) and mutual fund portfolios designed for disciplined investing, rupee-cost averaging, and long-term equity compounding across India's top fund houses.",
+        suitableFor: "Salaried professionals, business owners, and goal-oriented investors seeking inflation-beating capital growth and high liquidity.",
         highlights: [
-          "Freedom to switch between Large-Cap, Mid-Cap, and Debt funds tax-free",
-          "Zero long-term capital gains tax on maturity within eligible limits",
-          "Return of mortality charges features in modern generation ULIPs",
+          "Start automated monthly investments from ₹500/month with zero lock-in flexibility",
+          "Diversified allocation across Large-Cap, Flexi-Cap, Hybrid, and ELSS tax-saving funds",
+          "Personalized portfolio selection, periodic performance review, and rebalancing support",
         ],
       },
       {
@@ -1409,14 +1409,14 @@ export const INSURANCE_CATEGORIES_DATA: readonly InsuranceCategoryItem[] = [
       {
         title: "Investment Horizon & Lock-in Period",
         explanation:
-          "Insurance-cum-investment plans are structured for long-term compounding (typically 5 to 20 years). Premature surrender before maturity can result in high surrender charges; align policy term with your specific financial milestone.",
-        checklistItem: "Ensure you can comfortably pay premiums for the entire commitment period without liquidity distress.",
+          "Insurance-cum-investment plans and long-term mutual fund SIPs are structured for compounding (typically 5 to 20 years). Premature surrender before maturity can result in high surrender charges; align policy term and SIP horizon with your specific financial milestone.",
+        checklistItem: "Ensure you can comfortably pay regular premiums or SIP installments without liquidity distress.",
       },
       {
         title: "Guaranteed vs. Market-Linked Returns",
         explanation:
-          "Guaranteed savings policies lock in a contractual rate of return regardless of economic cycles, whereas ULIPs invest in equities and debt funds where returns reflect capital market performance.",
-        checklistItem: "Assess your risk appetite before deciding between market-linked equity upside vs guaranteed certainty.",
+          "Guaranteed savings policies lock in a contractual rate of return regardless of economic cycles, whereas SIP & Mutual Funds invest in equity and debt instruments where returns reflect capital market growth with substantial compounding potential.",
+        checklistItem: "Assess your risk appetite and investment horizon before deciding between guaranteed certainty and market-linked SIP growth.",
       },
       {
         title: "Waiver of Premium Benefit",
@@ -1427,18 +1427,18 @@ export const INSURANCE_CATEGORIES_DATA: readonly InsuranceCategoryItem[] = [
       {
         title: "Tax Eligibility under Budget Regulations",
         explanation:
-          "Ensure your aggregate annual premium across traditional life policies remains within the ₹5 Lakh threshold to preserve 100% tax-free maturity benefits under Section 10(10D).",
-        checklistItem: "Calculate aggregate life insurance premiums to ensure full tax exemption under Section 10(10D).",
+          "Ensure your aggregate annual premium across traditional life policies remains within the ₹5 Lakh threshold to preserve 100% tax-free maturity benefits under Section 10(10D), and optimize equity/debt capital gains tax rules for mutual fund investments.",
+        checklistItem: "Calculate aggregate life insurance premiums and long-term capital gains thresholds for maximum tax efficiency.",
       },
     ],
     commonExclusions: [
-      "Market risk on investment returns in ULIPs is borne entirely by the policyholder",
-      "Early surrender within the first 3 to 5 years incurs statutory deductions and forfeit of full benefits",
+      "Market risks on investment returns in SIPs and Mutual Funds are subject to market fluctuations without fixed capital guarantee",
+      "Early surrender within the first 3 to 5 years of traditional policies incurs statutory deductions and forfeit of full benefits",
       "Loan availability against policies is subject to minimum paid-up status (usually after 2 full policy years)",
       "Suicide exclusion clause within 12 months from policy inception as per IRDAI guidelines",
     ],
     exclusionsDisclaimer:
-      "All investment projections and non-guaranteed bonuses are illustrative. Guaranteed benefits and payouts are subject to timely premium deposits and underwriter policy terms.",
+      "All investment projections and historical fund returns are illustrative. Mutual fund investments are subject to market risks; read all scheme-related documents carefully. Guaranteed insurance benefits are subject to timely premium deposits and underwriter policy terms.",
     whoNeedsThis: [
       {
         profile: "Parents with Young Children",
@@ -1447,8 +1447,8 @@ export const INSURANCE_CATEGORIES_DATA: readonly InsuranceCategoryItem[] = [
       },
       {
         profile: "Salaried Professionals",
-        scenario: "Individuals seeking disciplined, tax-free annual compounding under Section 80C and Section 10(10D).",
-        recommendedFocus: "Guaranteed Return Endowment or Capital Guarantee Solutions.",
+        scenario: "Individuals seeking disciplined wealth creation through SIPs along with tax-efficient annual compounding under Section 80C and Section 10(10D).",
+        recommendedFocus: "Systematic Investment Plans (SIP), Mutual Funds, or Guaranteed Return Endowment Solutions.",
       },
       {
         profile: "Pre-Retirees & Business Owners",
@@ -1473,9 +1473,9 @@ export const INSURANCE_CATEGORIES_DATA: readonly InsuranceCategoryItem[] = [
           "The parent is the life insured and premium payer, while the child is the beneficiary. If the parent survives, the accumulated maturity fund is paid to fund higher education. In case of unfortunate demise of the parent, the sum assured is paid immediately to the family, all future premiums are waived by the insurer, and the full maturity benefit is still paid when the child turns 18 or 21.",
       },
       {
-        question: "Can I switch funds inside a ULIP without paying capital gains tax?",
+        question: "How does investing via Systematic Investment Plan (SIP) in Mutual Funds help create wealth?",
         answer:
-          "Yes. ULIPs allow unlimited or multiple free switches between equity, debt, and balanced funds without triggering short-term or long-term capital gains tax, making them one of the most tax-efficient investment instruments in India.",
+          "A Systematic Investment Plan (SIP) allows you to invest a fixed amount regularly (monthly or quarterly) into top-rated mutual funds. It leverages rupee-cost averaging to mitigate market volatility, eliminating the need to time the market while benefiting from power-of-compounding growth over 5, 10, or 15+ years.",
       },
     ],
     whyNeeded:
@@ -1483,14 +1483,16 @@ export const INSURANCE_CATEGORIES_DATA: readonly InsuranceCategoryItem[] = [
     recommendedFor:
       "Parents, salaried individuals, professionals, and business families in Barasat, Madhyamgram, and Habra looking for long-term financial security.",
     seo: {
-      metaTitle: "Investment & Savings Plans in Barasat - Guaranteed Returns & ULIP - Insurance Sathi",
+      metaTitle: "Investment & Savings Plans in Barasat - Guaranteed Returns, SIP & Mutual Funds - Insurance Sathi",
       metaDescription:
-        "Explore guaranteed return savings plans, child education funds, and retirement annuity solutions in Barasat, Madhyamgram, and Habra with Insurance Sathi.",
+        "Explore guaranteed return savings plans, child education funds, retirement annuities, and SIP & Mutual Funds advisory in Barasat, Madhyamgram, and Habra with Insurance Sathi.",
       keywords: [
         "Investment Plans Barasat",
         "Guaranteed Return Insurance North 24 Parganas",
         "Child Education Savings Plan Barasat",
-        "ULIP Advisor Duckbanglow More",
+        "SIP and Mutual Funds Advisor Duckbanglow More",
+        "Mutual Funds Barasat",
+        "SIP Investment Barasat",
         "Retirement Pension Plans Habra",
         "Tax Free Savings Insurance Madhyamgram",
       ],

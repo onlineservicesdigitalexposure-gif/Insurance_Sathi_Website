@@ -10,11 +10,28 @@ import { AnimatedFeatureSymbol } from "@/components/brand/AnimatedFeatureSymbol"
 import { cn } from "@/lib/utils";
 
 export function PartnerLogosSection() {
-  const [selectedFilter, setSelectedFilter] = React.useState<"all" | "life" | "general">("all");
+  const [selectedFilter, setSelectedFilter] = React.useState<"all" | "life" | "health" | "general">("all");
 
   const filteredPartners = React.useMemo(() => {
     if (selectedFilter === "all") return INSURANCE_PARTNERS_DATA;
-    return INSURANCE_PARTNERS_DATA.filter((p) => p.category === selectedFilter);
+    if (selectedFilter === "life") {
+      return INSURANCE_PARTNERS_DATA.filter((p) => p.category === "life");
+    }
+    if (selectedFilter === "health") {
+      return INSURANCE_PARTNERS_DATA.filter(
+        (p) =>
+          p.category === "health" ||
+          p.id === "icici-lombard" ||
+          p.id === "hdfc-ergo" ||
+          p.id === "bajaj-allianz"
+      );
+    }
+    if (selectedFilter === "general") {
+      return INSURANCE_PARTNERS_DATA.filter(
+        (p) => p.category === "general" || p.category === "health"
+      );
+    }
+    return INSURANCE_PARTNERS_DATA;
   }, [selectedFilter]);
 
   // Split into two rows for dual horizontal marquee based on filtered selection
@@ -31,7 +48,7 @@ export function PartnerLogosSection() {
         <div className="mx-auto max-w-4xl text-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-brand-royal/20 bg-brand-royal-50 px-4 py-1.5 text-xs font-bold text-brand-royal shadow-xs mb-4">
             <Sparkles className="h-3.5 w-3.5 text-brand-orange" aria-hidden="true" />
-            <span>Under One Roof • 20+ IRDAI Regulated Insurers</span>
+            <span>Under One Roof • 27+ IRDAI Regulated Insurers</span>
           </div>
 
           {/* Ribbon Title Bar from Official Banner */}
@@ -57,7 +74,7 @@ export function PartnerLogosSection() {
                   : "bg-white text-slate-600 border border-slate-200 hover:bg-slate-100"
               )}
             >
-              All 20+ Companies
+              All 27+ Companies
             </button>
             <button
               type="button"
@@ -70,6 +87,18 @@ export function PartnerLogosSection() {
               )}
             >
               Life Insurance
+            </button>
+            <button
+              type="button"
+              onClick={() => setSelectedFilter("health")}
+              className={cn(
+                "rounded-full px-4 py-1.5 text-xs font-bold transition-all cursor-pointer",
+                selectedFilter === "health"
+                  ? "bg-brand-navy text-white shadow-sm"
+                  : "bg-white text-slate-600 border border-slate-200 hover:bg-slate-100"
+              )}
+            >
+              Health Insurance
             </button>
             <button
               type="button"

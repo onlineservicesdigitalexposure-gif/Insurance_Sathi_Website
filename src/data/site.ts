@@ -35,7 +35,7 @@ export const SITE_CONFIG: SiteConfig = {
   socials: [
     {
       platform: "Facebook",
-      url: "https://www.facebook.com/insurancesathi",
+      url: "https://www.facebook.com/share/19xYK42tJL/",
       label: "Insurance Sathi on Facebook",
     },
     {

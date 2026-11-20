@@ -1,4 +1,4 @@
-import { BookOpen, ShieldCheck, MapPin } from "lucide-react";
+import { BookOpen, ShieldCheck, MapPin, Video } from "lucide-react";
 import { LogoHeadingText } from "@/components/ui/LogoHeadingText";
 import { Breadcrumb } from "./Breadcrumb";
 
@@ -52,6 +52,14 @@ export function BlogHero() {
               <MapPin className="h-4 w-4 text-brand-orange" aria-hidden="true" />
               <span>Duckbanglow More, Barasat, North 24 Parganas</span>
             </div>
+            <span className="hidden sm:inline">•</span>
+            <a
+              href="#video-guides"
+              className="inline-flex items-center gap-1.5 font-bold text-amber-300 hover:text-white transition-colors"
+            >
+              <Video className="h-4 w-4" aria-hidden="true" />
+              <span>3 Video Guides Available</span>
+            </a>
           </div>
         </div>
       </div>

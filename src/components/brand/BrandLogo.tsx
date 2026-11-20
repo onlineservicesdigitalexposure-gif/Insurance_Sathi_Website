@@ -19,7 +19,7 @@ export function BrandLogoIcon({ className = "h-11 w-auto" }: { className?: strin
       width={64}
       height={58}
       sizes="64px"
-      loading="eager"
+      priority
       style={{ width: "auto" }}
       className={cn("shrink-0 object-contain drop-shadow-xs", className)}
     />

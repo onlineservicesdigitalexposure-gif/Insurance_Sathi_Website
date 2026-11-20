@@ -57,6 +57,23 @@ export function PartnerLogoSvg({ id, className = "h-8 w-auto" }: PartnerLogoSvgP
         </svg>
       );
 
+    case "icici-prudential":
+      return (
+        <svg viewBox="0 0 175 50" fill="none" xmlns="http://www.w3.org/2000/svg" className={className} aria-label="ICICI Prudential Life Logo">
+          <rect x="6" y="8" width="34" height="34" rx="6" fill="#8B2131" />
+          <circle cx="23" cy="19" r="4.5" fill="#F37021" />
+          <path d="M17 26 H29 V36 H17 Z" fill="#FFFFFF" opacity="0.95" />
+          <path d="M23 26 V36" stroke="#8B2131" strokeWidth="2" />
+          <text x="46" y="24" fill="#8B2131" fontSize="12" fontWeight="900" fontFamily="sans-serif" letterSpacing="0.3">
+            ICICI PRUDENTIAL
+          </text>
+          <rect x="46" y="28" width="122" height="2" fill="#F37021" />
+          <text x="46" y="40" fill="#003366" fontSize="8" fontWeight="800" letterSpacing="1" fontFamily="sans-serif">
+            LIFE INSURANCE
+          </text>
+        </svg>
+      );
+
     case "tata-aia":
       return (
         <svg viewBox="0 0 160 50" fill="none" xmlns="http://www.w3.org/2000/svg" className={className} aria-label="Tata AIA Life Logo">
@@ -111,6 +128,100 @@ export function PartnerLogoSvg({ id, className = "h-8 w-auto" }: PartnerLogoSvgP
           </text>
           <text x="48" y="36" fill="#DC2626" fontSize="11" fontWeight="800" fontFamily="sans-serif">
             insurance
+          </text>
+        </svg>
+      );
+
+    case "star-health":
+      return (
+        <svg viewBox="0 0 165 50" fill="none" xmlns="http://www.w3.org/2000/svg" className={className} aria-label="Star Health Logo">
+          <circle cx="22" cy="25" r="16" fill="#0B2A4A" />
+          <path d="M22 13 L24.8 20.8 L33 20.8 L26.4 25.5 L29 33.2 L22 28.5 L15 33.2 L17.6 25.5 L11 20.8 L19.2 20.8 Z" fill="#FFC107" />
+          <text x="44" y="24" fill="#D32F2F" fontSize="18" fontWeight="900" fontFamily="sans-serif" letterSpacing="1">
+            STAR
+          </text>
+          <text x="44" y="37" fill="#0B2A4A" fontSize="7.5" fontWeight="800" fontFamily="sans-serif" letterSpacing="0.5">
+            HEALTH INSURANCE
+          </text>
+        </svg>
+      );
+
+    case "care-health":
+      return (
+        <svg viewBox="0 0 165 50" fill="none" xmlns="http://www.w3.org/2000/svg" className={className} aria-label="Care Health Logo">
+          <circle cx="22" cy="25" r="16" fill="#EBF5FF" />
+          <path d="M22 15 C18 11 12 14 12 19 C12 25 22 33 22 33 C22 33 32 25 32 19 C32 14 26 11 22 15 Z" fill="#0072CE" />
+          <path d="M22 17 C24 15 27 16 27 19 C27 23 22 28 22 28 Z" fill="#28A745" />
+          <text x="44" y="26" fill="#0072CE" fontSize="21" fontWeight="900" fontFamily="sans-serif" letterSpacing="-0.5">
+            care
+          </text>
+          <text x="44" y="38" fill="#16A34A" fontSize="7.5" fontWeight="800" letterSpacing="0.8" fontFamily="sans-serif">
+            HEALTH INSURANCE
+          </text>
+        </svg>
+      );
+
+    case "niva-bupa":
+      return (
+        <svg viewBox="0 0 165 50" fill="none" xmlns="http://www.w3.org/2000/svg" className={className} aria-label="Niva Bupa Health Logo">
+          <circle cx="22" cy="25" r="15" fill="#FFF2F0" />
+          <path d="M14 23 C18 29 26 29 30 23" stroke="#E05A47" strokeWidth="3" strokeLinecap="round" fill="none" />
+          <circle cx="17" cy="18" r="2.2" fill="#E05A47" />
+          <circle cx="27" cy="18" r="2.2" fill="#1B75BC" />
+          <text x="44" y="24" fill="#E05A47" fontSize="14" fontWeight="900" fontFamily="sans-serif">
+            niva <tspan fill="#1B75BC">bupa</tspan>
+          </text>
+          <text x="44" y="36" fill="#64748B" fontSize="8" fontWeight="700" letterSpacing="0.4" fontFamily="sans-serif">
+            Health Insurance
+          </text>
+        </svg>
+      );
+
+    case "manipal-cigna":
+      return (
+        <svg viewBox="0 0 170 50" fill="none" xmlns="http://www.w3.org/2000/svg" className={className} aria-label="ManipalCigna Health Logo">
+          <circle cx="22" cy="25" r="15" fill="#E6F5F5" />
+          <circle cx="22" cy="19" r="4.5" fill="#FF8200" />
+          <path d="M15 32 C15 27 22 25 22 25 C22 25 29 27 29 32" stroke="#008288" strokeWidth="2.5" strokeLinecap="round" fill="none" />
+          <path d="M11 22 L14 24 M33 22 L30 24 M22 11 L22 13.5" stroke="#FF8200" strokeWidth="1.8" strokeLinecap="round" />
+          <text x="44" y="24" fill="#008288" fontSize="13" fontWeight="900" fontFamily="sans-serif">
+            Manipal<tspan fill="#FF8200">Cigna</tspan>
+          </text>
+          <text x="44" y="36" fill="#64748B" fontSize="8" fontWeight="700" letterSpacing="0.4" fontFamily="sans-serif">
+            Health Insurance
+          </text>
+        </svg>
+      );
+
+    case "icici-lombard":
+      return (
+        <svg viewBox="0 0 170 50" fill="none" xmlns="http://www.w3.org/2000/svg" className={className} aria-label="ICICI Lombard Logo">
+          <circle cx="20" cy="18" r="4.5" fill="#F37021" />
+          <path d="M15 25 C15 22 25 22 25 25 L25 36 C25 37 15 37 15 36 Z" fill="#8B2131" />
+          <path d="M12 20 C12 30 28 36 32 28" stroke="#F37021" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+          <text x="38" y="22" fill="#8B2131" fontSize="13" fontWeight="900" fontFamily="sans-serif">
+            ICICI <tspan fill="#F37021">Lombard</tspan>
+          </text>
+          <rect x="38" y="26" width="55" height="15" rx="3" fill="#8B2131" />
+          <text x="42" y="37" fill="#FFFFFF" fontSize="8" fontWeight="900" letterSpacing="0.8" fontFamily="sans-serif">
+            ELEVATE
+          </text>
+          <text x="98" y="37" fill="#64748B" fontSize="7.5" fontWeight="700" fontFamily="sans-serif">
+            General &amp; Health
+          </text>
+        </svg>
+      );
+
+    case "hdfc-ergo":
+      return (
+        <svg viewBox="0 0 170 50" fill="none" xmlns="http://www.w3.org/2000/svg" className={className} aria-label="HDFC ERGO Logo">
+          <rect x="6" y="8" width="34" height="34" rx="4" fill="#DA291C" />
+          <path d="M12 14 H34 V20 H26 V40 H18 V20 H12 Z" fill="#FFFFFF" />
+          <text x="46" y="26" fill="#004B87" fontSize="16" fontWeight="900" fontFamily="sans-serif">
+            HDFC <tspan fill="#DA291C">ERGO</tspan>
+          </text>
+          <text x="46" y="38" fill="#64748B" fontSize="8" fontWeight="700" fontFamily="sans-serif">
+            General Insurance
           </text>
         </svg>
       );

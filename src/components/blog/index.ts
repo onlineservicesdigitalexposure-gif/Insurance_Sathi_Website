@@ -9,3 +9,4 @@ export * from "./PostContent";
 export * from "./PostShareButtons";
 export * from "./RelatedPosts";
 export * from "./BlogEnquiryCta";
+export * from "./BlogVideoSection";

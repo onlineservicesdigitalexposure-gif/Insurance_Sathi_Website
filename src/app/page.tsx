@@ -73,7 +73,10 @@ export default function HomePage() {
         {/* 3. Why Choose Insurance Sathi (5 Pillars) */}
         <WhyChooseUsSection />
 
-        {/* 4. How It Works (4 Steps) */}
+        {/* 4. Contact / Consultation CTA ("Need Help With Your Insurance Policy?", Call Now, WhatsApp Us) - Positioned above Process */}
+        <ContactCtaSection />
+
+        {/* 5. How It Works (4 Steps) - "We Have The Best Team And The Best Process" */}
         <HowItWorksSection />
 
         {/* 6. About Insurance Sathi (Founder MD Abrahim & Established 20 May 2023) */}
@@ -82,11 +85,8 @@ export default function HomePage() {
         {/* 7. FAQ Section (Interactive Accordion) */}
         <FaqSection />
 
-        {/* Knowledge Hub & Consumer Guides (Supports #blog navigation) */}
+        {/* 8. Knowledge Hub & Consumer Guides (Supports #blog navigation) */}
         <BlogSection />
-
-        {/* 9. Final CTA ("Need Help With Your Insurance Policy?", Call Now, WhatsApp Us) */}
-        <ContactCtaSection />
       </div>
     </>
   );
