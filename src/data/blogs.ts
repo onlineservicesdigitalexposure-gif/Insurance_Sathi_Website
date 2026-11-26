@@ -1,4 +1,106 @@
-import type { BlogPostItem, BlogAuthorInfo } from "@/types";
+import type { BlogPostItem, BlogAuthorInfo, BlogVideoItem } from "@/types";
+
+export const BLOG_VIDEOS_DATA: readonly BlogVideoItem[] = [
+  {
+    id: "video-1",
+    title: "Why Health Insurance Matters: The Piggy Bank & Risk-Pooling Lesson",
+    description:
+      "Through a relatable father-and-son car conversation, discover why years of small piggy-bank savings can disappear in one hospital visit—and how pooling ₹10 across a classroom of 29 students protects every member from a sudden ₹2,000+ bill.",
+    src: "/images/blog/BlogVedio1.mp4",
+    poster: "/images/blog/health-waiting-periods.webp",
+    duration: "1:37 min",
+    durationIso: "PT1M37S",
+    badge: "Story Reel",
+    topic: "Health Insurance Basics",
+    language: "Hindi",
+    keyPoints: [
+      "Why personal savings alone struggle against sudden hospitalization bills",
+      "29-student classroom analogy: small pooled premiums cover big claims",
+      "Transferring financial risk to the insurer keeps family savings intact",
+    ],
+  },
+  {
+    id: "video-2",
+    title: "Protect 20 Years of Savings From One Hospital Bill",
+    description:
+      "A single serious illness and one steep hospital invoice can wipe out two decades of hard-earned family savings in days. Learn why combining Health Insurance with an Emergency Fund prevents families from borrowing from relatives during medical crises.",
+    src: "/images/blog/BlogVedio2.mp4",
+    poster: "/images/blog/cashless-hospital-claims.webp",
+    duration: "0:30 min",
+    durationIso: "PT30S",
+    badge: "Hospital Reality",
+    topic: "Family Financial Shield",
+    language: "Hindi",
+    keyPoints: [
+      "Serious illness impacts the whole family financially, not just the patient",
+      "Prevents draining 20-year savings or taking emergency loans from relatives",
+      "Focus on your family's health at the hospital—not arranging money",
+    ],
+  },
+  {
+    id: "video-3",
+    title: "Modern Treatment & Robotic Surgery: Zero Compromise on Care",
+    description:
+      "Medical science has advanced with robotic surgery for faster, smoother recovery—yet fear of high bills forces many families to skip modern care. See how the right health insurance lets doctors choose the best treatment rather than your budget.",
+    src: "/images/blog/BlogVedio3.mp4",
+    poster: "/images/services/claim-assistance-cartoon.webp",
+    duration: "0:27 min",
+    durationIso: "PT27S",
+    badge: "Medical Tech",
+    topic: "Modern Treatments",
+    language: "Hindi",
+    keyPoints: [
+      "Modern robotic surgery supports quicker, less invasive recovery",
+      "Right health cover removes cost fear around advanced procedures",
+      "Let your doctor decide the best treatment—not budget limits",
+    ],
+  },
+  {
+    id: "video-4",
+    title: "Chai Comes on Credit, Life & Health Don't: Plan Before Crisis Hits",
+    description:
+      "At a neighbourhood tea stall, a ₹15 cup of chai is easily given on credit—but nobody can lend you health or life when a sudden crisis strikes. A memorable animated reminder to secure Health and Personal Accident Insurance before tough times arrive.",
+    src: "/images/blog/BlogVedio4.mp4",
+    poster: "/images/insurance/health-insurance-cartoon.webp",
+    duration: "0:40 min",
+    durationIso: "PT40S",
+    badge: "3D Story Reel",
+    topic: "Health & Accident Cover",
+    language: "Hindi",
+    isNew: true,
+    keyPoints: [
+      "Cold tea can be reheated, but lost preparation before an emergency cannot",
+      "Why we plan small ₹15 daily spends yet postpone health & safety cover",
+      "Secure Health Insurance and Personal Accident Cover ahead of crisis",
+    ],
+  },
+  {
+    id: "video-5",
+    title: "Why Health Insurance Premiums Rise Every Year: Medical Inflation Explained",
+    description:
+      "Surprised by a 35%–50% renewal premium jump? This 3D animated breakdown explains how MRI/CT diagnostics, expensive new medicines, rising claim payouts, and medical inflation (₹1,00,000 care rising to ₹2,50,000+) affect premiums—and why upgrading cover matters.",
+    src: "/images/blog/BlogVedio5.mp4",
+    poster: "/images/blog/term-insurance-calculation.webp",
+    duration: "0:56 min",
+    durationIso: "PT56S",
+    badge: "3D Explainer",
+    topic: "Medical Inflation & Renewal",
+    language: "Hindi",
+    isNew: true,
+    keyPoints: [
+      "MRI/CT scans, modern equipment, and new injections raise treatment bills",
+      "Higher claim utilization requires insurers to maintain future claim reserves",
+      "₹1 Lakh treatment today can cost ₹2.5 Lakh+ later—review & upgrade cover",
+    ],
+  },
+] as const;
+
+/**
+ * Returns all educational blog videos.
+ */
+export function getAllBlogVideos(): readonly BlogVideoItem[] {
+  return BLOG_VIDEOS_DATA;
+}
 
 export const VERIFIED_AUTHOR_DETAILS: BlogAuthorInfo = {
   name: "MD Abrahim",

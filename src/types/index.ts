@@ -294,6 +294,21 @@ export interface BlogAuthorInfo {
   readonly phone?: string;
 }
 
+export interface BlogVideoItem {
+  readonly id: string;
+  readonly title: string;
+  readonly description: string;
+  readonly src: string;
+  readonly poster: string;
+  readonly duration: string;
+  readonly durationIso: string;
+  readonly badge: string;
+  readonly topic: string;
+  readonly language: string;
+  readonly isNew?: boolean;
+  readonly keyPoints: readonly string[];
+}
+
 export interface BlogPostItem {
   readonly id: string;
   readonly slug: string;

@@ -1,8 +1,11 @@
 import { BookOpen, ShieldCheck, MapPin, Video } from "lucide-react";
+import { getAllBlogVideos } from "@/data/blogs";
 import { LogoHeadingText } from "@/components/ui/LogoHeadingText";
 import { Breadcrumb } from "./Breadcrumb";
 
 export function BlogHero() {
+  const videoCount = getAllBlogVideos().length;
+
   return (
     <div className="relative overflow-hidden bg-gradient-to-b from-brand-navy-900 via-brand-navy to-brand-navy-800 text-white py-4">
       {/* Decorative background circles */}
@@ -58,7 +61,7 @@ export function BlogHero() {
               className="inline-flex items-center gap-1.5 font-bold text-amber-300 hover:text-white transition-colors"
             >
               <Video className="h-4 w-4" aria-hidden="true" />
-              <span>3 Video Guides Available</span>
+              <span>{videoCount} Video Guides Available</span>
             </a>
           </div>
         </div>
